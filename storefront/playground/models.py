@@ -7,7 +7,7 @@ def filepath(request, filename):
     fileName = "%s%s", (timeNow, old_filename)
     return os.path.join("uploads/", filename)
 # Create your models here.
-class User(models.Model):
+class user(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.TextField(max_length=2700)
     age = models.TextField(max_length=2700)
